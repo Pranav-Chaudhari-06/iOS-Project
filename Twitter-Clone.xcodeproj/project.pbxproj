@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95163DE52D87F6F6000BA050 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95163DE42D87F6F6000BA050 /* MainTabView.swift */; };
+		95163DEB2D87FD27000BA050 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95163DEA2D87FD27000BA050 /* ExploreView.swift */; };
+		95163DED2D87FD45000BA050 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95163DEC2D87FD45000BA050 /* NotificationsView.swift */; };
+		95163DEF2D87FD8F000BA050 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95163DEE2D87FD8F000BA050 /* MessagesView.swift */; };
 		95AD86B12D87E006004C2101 /* Twitter_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AD86B02D87E006004C2101 /* Twitter_CloneApp.swift */; };
 		95AD86B32D87E006004C2101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AD86B22D87E006004C2101 /* ContentView.swift */; };
 		95AD86B52D87E008004C2101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AD86B42D87E008004C2101 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95163DE42D87F6F6000BA050 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		95163DEA2D87FD27000BA050 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		95163DEC2D87FD45000BA050 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		95163DEE2D87FD8F000BA050 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		95AD86AD2D87E006004C2101 /* Twitter-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AD86B02D87E006004C2101 /* Twitter_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter_CloneApp.swift; sourceTree = "<group>"; };
 		95AD86B22D87E006004C2101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +44,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95163DE32D87F6DD000BA050 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				95163DE42D87F6F6000BA050 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		95163DE62D87FC8E000BA050 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				95163DEE2D87FD8F000BA050 /* MessagesView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		95163DE72D87FC91000BA050 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				95163DEC2D87FD45000BA050 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		95163DE82D87FC94000BA050 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				95163DEA2D87FD27000BA050 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		95163DE92D87FCB4000BA050 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		95AD86A42D87E006004C2101 = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +147,12 @@
 			isa = PBXGroup;
 			children = (
 				95AD86C22D87E0AF004C2101 /* Components */,
+				95163DE82D87FC94000BA050 /* Explore */,
 				95AD86C32D87E0B7004C2101 /* Feed */,
+				95163DE32D87F6DD000BA050 /* MainTab */,
+				95163DE62D87FC8E000BA050 /* Messages */,
+				95163DE72D87FC91000BA050 /* Notifications */,
+				95163DE92D87FCB4000BA050 /* Profile */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -215,10 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95163DEF2D87FD8F000BA050 /* MessagesView.swift in Sources */,
 				95AD86B32D87E006004C2101 /* ContentView.swift in Sources */,
 				95AD86CA2D87E210004C2101 /* TweetsRowView.swift in Sources */,
 				95AD86C72D87E142004C2101 /* FeedView.swift in Sources */,
 				95AD86B12D87E006004C2101 /* Twitter_CloneApp.swift in Sources */,
+				95163DEB2D87FD27000BA050 /* ExploreView.swift in Sources */,
+				95163DE52D87F6F6000BA050 /* MainTabView.swift in Sources */,
+				95163DED2D87FD45000BA050 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

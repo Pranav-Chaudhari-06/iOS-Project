@@ -15,7 +15,7 @@ struct ContentView: View {
                 .navigationBarHidden(showMenu)
             if showMenu{
                 ZStack{
-                    Color.black.opacity(showMenu ? 0.25:0.0)
+                    Color.black.opacity(showMenu ? 0.25 : 0.0)
                     
                 }.onTapGesture {
                     withAnimation(.easeInOut){
@@ -43,6 +43,9 @@ struct ContentView: View {
                 }
                 
             }
+        }
+        .onAppear{
+            showMenu = false
         }
     }
 }
